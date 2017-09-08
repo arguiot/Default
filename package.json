@@ -1,0 +1,77 @@
+{
+  "name": "Default",
+  "version": "v1.2.3",
+  "description": "A simple JavaScript framework for building ambitious UIs",
+  "main": "dist/default.min.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "run": "npm test",
+    "build": "npm test",
+    "test": "npm run gulp && npm run lint && npm run jest && exit 0",
+    "gulp": "gulp",
+    "lint": "./node_modules/.bin/eslint dist/display.es6.js --fix",
+	"jest": "./node_modules/.bin/jest",
+	"update-contrib": "weallcontribute -o . && git add CONTRIBUTING.md && git commit -m 'docs(contributing): updated CONTRIBUTING.md'"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arguiot/Default.git"
+  },
+  "keywords": [
+    "Display.JS",
+    "display",
+    "DOM",
+    "manipulation",
+    "framework",
+    "javascript"
+  ],
+  "author": "Arthur Guiot",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/arguiot/Default/issues"
+  },
+  "homepage": "https://display.js.org",
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "babel-helper-flip-expressions": "^0.1.2",
+    "babel-plugin-minify-builtins": "^0.1.3",
+    "babel-plugin-minify-constant-folding": "^0.1.3",
+    "babel-plugin-minify-dead-code-elimination": "^0.1.7",
+    "babel-plugin-minify-flip-comparisons": "^0.1.2",
+    "babel-plugin-minify-guarded-expressions": "^0.1.2",
+    "babel-plugin-minify-infinity": "^0.1.2",
+    "babel-plugin-minify-mangle-names": "^0.1.3",
+    "babel-plugin-minify-replace": "^0.1.2",
+    "babel-plugin-minify-simplify": "^0.1.2",
+    "babel-plugin-minify-type-constructors": "^0.1.2",
+    "babel-plugin-transform-inline-consecutive-adds": "^0.1.2",
+    "babel-plugin-transform-member-expression-literals": "^6.8.4",
+    "babel-plugin-transform-merge-sibling-variables": "^6.8.5",
+    "babel-plugin-transform-minify-booleans": "^6.8.2",
+    "babel-plugin-transform-property-literals": "^6.8.4",
+    "babel-plugin-transform-remove-console": "^6.8.4",
+    "babel-plugin-transform-remove-debugger": "^6.8.4",
+    "babel-plugin-transform-remove-undefined": "^0.1.2",
+    "babel-plugin-transform-simplify-comparison-operators": "^6.8.4",
+    "babel-plugin-transform-undefined-to-void": "^6.8.2",
+    "babel-preset-babili": "^0.1.4",
+    "babel-preset-env": "^1.6.0",
+    "babili": "^0.1.4",
+    "buffer-shims": "^1.0.0",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-plugin-import": "^2.6.1",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-babili": "^0.1.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-rigger": "^0.5.8",
+    "gulp-uglify": "^3.0.0",
+    "jest": "^20.0.4",
+	"weallcontribute": "^1.0.8"
+  },
+  "dependencies": {}
+}

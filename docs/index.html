@@ -1,0 +1,228 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+     <link rel="alternate" hreflang="en-US" href="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Put your title</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="description" content="A simple framework for building ambitious UIs">
+    <meta name="keywords" content="JavaScript, framework, displayjs, display.js, arguiot, frontend, jquery">
+    <meta name="author" content="Arthur Guiot">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- twitter -->
+    <meta name="twitter:site" content="@arthur_guiot">
+    <meta name="twitter:creator" content="@arthur_guiot">
+    <meta name="twitter:title" content="DisplayJS">
+    <meta name="twitter:description" content="A simple framework for building ambitious UIs">
+    <meta name="twitter:image" content="https://display.js.org/img/Display.JS.jpg">
+    <!-- Open graph met atags -->
+    <meta property="og:title" content="DisplayJS" />
+    <meta property="og:description" content="A simple framework for building ambitious UIs"/>
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://display.js.org" />
+    <meta property="og:image" content="https://display.js.org/img/Display.JS.jpg" />
+    <!-- Google verification -->
+    <meta name="google-site-verification" content="GjXfnojrsoOmFbGpyYa_gmGEbP4651fAfHr-abDGFnE" />
+    <!-- Verifications -->
+    <meta name="detectify-verification" content="dd755a8a29b6712ed37366972175988d" />
+</head>
+
+<body>
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <div class="header-container">
+        <header class="wrapper clearfix">
+            <h1 class="title">DisplayJS</h1>
+            <div class="responsive-nav m-and-higher">
+                <div class="parent-hamburger m-and-lower"><i class="fa fa-bars hamburger" aria-hidden="true"></i></div>
+                <nav class="js-toggled">
+                    <ul>
+                        <li><a href="https://github.com/arguiot/DisplayJS/wiki">Docs</a></li>
+                        <li><a href="https://github.com/arguiot/DisplayJS/releases">Download</a></li>
+                        <li><a href="https://github.com/arguiot/DisplayJS/">GitHub</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        </header>
+    </div>
+    <div class="show">
+        <div id="particles-js"></div>
+        <img class="logo" src="img/logo-white.svg" alt="DisplayJS' logo" height="150px">
+        <h1>DisplayJS</h1>
+        <p>A simple JavaScript framework for building ambitious UIs</p>
+    </div>
+    <div class="footer-fixed">
+        Made with ❤️ by <i class="fa fa-twitter" aria-hidden="true"></i> <a href="https://twitter.com/arthur_guiot" class="twitter-a">@arthur_guiot</a>
+        <div class="center"><a href="https://github.com/arguiot/DisplayJS/stargazers"><img src="https://img.shields.io/github/stars/arguiot/DisplayJS.svg?style=social&amp;label=Star" alt="GitHub stars" /></a><a href="https://github.com/arguiot/DisplayJS"><img src="https://img.shields.io/github/forks/arguiot/DisplayJS.svg?style=social&amp;label=Fork" alt="GitHub forks" /></a></div>
+        <span class="right"><a>All code</a> hosted with ❤ by <a href="https://github.com">GitHub</a></span>
+    </div>
+    <div class="main-container">
+        <section class="watch">
+            <span><i class="fa fa-play-circle-o" aria-hidden="true"></i> Watch the video</span>
+            <div class="videoDisplayJS">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/hSyO2lgqKVQ?rel=0" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>
+        <div class="main wrapper clearfix">
+            <article>
+                <header>
+                    <h1>DisplayJS</h1>
+                    <hr>
+                    <p>DisplayJS is a simple framework that helps you to efficiently render the DOM. When you need to display the content of a variable on the page, you'll write something like this, if you're using <a href="jquery.com">jQuery</a>:</p>
+                    <script src="https://gist.github.com/arguiot/2a238f6e26436c3e0e50b1995a09749e.js"></script>
+                    <p>When you just have one or two variable to display, it's fine to use this method, but when you have like 20 or 30 variables to display, it become a big mess. That's why I created DisplayJS</p>
+                    <p>Now, you can simply use the Display JS method:</p>
+                    <script src="https://gist.github.com/arguiot/ffb13ae52f29df453a91ce4d7c5a5fd7.js"></script>
+                    <p>Ok, for only 1 variable it's a little bit longer, but when you have multiple things to render at the same time, this is where Display JS is strong.</p>
+                </header>
+                <section>
+                    <h2>Focus on your variables!</h2>
+                    <hr>
+                    <p>When you're creating huge UI, you'll have to render at the same time tons of variables, and let's be honest, that's not very optimized to write 100 lines of code with almost the same purpose. DisplayJS is made for that, you just have to indicate where to render those variables by an attribute in the HTML code. This means that you can focus on the content, not on the way it will be displayed.</p>
+                </section>
+                <section>
+                    <h2>What's the difference from other frameworks</h2>
+                    <hr>
+                    <p>When I had the idea of DisplayJS, I thought that it was useless because frameworks such as Vue.js or React does the same thing (they are all made for building UI) and they have tons of other features, but when I tried to use those frameworks, I realized that they weren't intuitive and they are all quite heavy (they weight all about ~ 100kb). DisplayJS was created to have the simplicity of jQuery, but with the power of Vue.js, React, Angular, etc... and also with a very small size.</p>
+                </section>
+                <section>
+                    <h2>You don't need <a href="jquery.com">jQuery</a></h2>
+                    <hr>
+                    <p>Ok, I know, <a href="jquery.com">jQuery</a> is fantastic! But, you don't always need it for a lot of things. The most important concepts are in Display JS, so, you'll have less troubles learning DisplayJS, because it syntax is user friendly.</p>
+                </section>
+                <section>
+                    <h2>Math Powered</h2>
+                    <p>DisplayJS includes some super useful functions about Math, Array manipulation, and even dataset prediction! If DisplayJS is including these function, it's because we want that you only need 1 single framework to do everything. We don't want you to use DisplayJS, jQuery, Lodash, or other Library when you don't need them (but you can still use them if you really need to (math.js, moment.js, etc...))</p>
+                </section>
+                <footer>
+                    <h3>Conclusion</h3>
+                    <p>If you were disapointed with Vue.js, React, etc... If you want something super simple to build UI, just try DisplayJS! We hope you'll choose DisplayJS next time you do something great!</p>
+                </footer>
+            </article>
+            <aside>
+                <h3>Getting started</h3>
+                <p>To use DisplayJS, you'll need to download DisplayJS and add it in your js folder. Or, you can add these line of code in the head or in the body of your page:</p>
+                <script src="https://gist.github.com/arguiot/8968e1219fa1c19b131f05d674d9f4cb.js"></script>
+                <p>Then, to initialize DisplayJS, add these line of JavaScript in your JavaScript file:</p>
+                <script src="https://gist.github.com/arguiot/39188300071d17669ce7a7ab393a7991.js"></script>
+                <p>Go see the <a href="https://github.com/arguiot/DisplayJS/wiki" class="white underline">wiki</a> for more informations</p>
+            </aside>
+        </div>
+        <section class="banner">
+            <section id="features">
+
+                <div class="grid">
+                  <div class="row">
+                    <div class="col col-4-of-12 col-m-4-of-4">
+
+                      <img src="img/icon-simple.svg" alt="Code icon" height="100px" />
+                      <h2>Simple</h2>
+                      <p>DisplayJS is incredibly simple because everything run in the background, this mean that you don't have to touch anything, you just have to write a few lines to declare your variables.</p>
+
+                    </div>
+                    <div class="col col-4-of-12 col-m-4-of-4">
+
+                      <img src="img/icon-feather.svg" alt="Feather icon">
+                      <h2>Lightweight</h2>
+                      <p>Display is complitely optimized for modern browser and weight <span var="kb_polyfill">~ 15</span> kb minified (Polyfill) and weight only <span var="kb"></span> in its minified ES6 version! DisplayJS has multiple builds, to meet your expectations. And, I'm constantly optimizing DisplayJS, because size matters 😉!</p>
+
+                    </div>
+                    <div class="col col-4-of-12 col-m-4-of-4">
+
+                      <img src="img/icon-best.svg" alt="Lightning icon">
+                      <h2>Lightning fast</h2>
+                      <p>DisplayJS is designed to be as fast possible. It's written in modern JavaScript, to be optimized for modern browser (such as Chrome, Safari, Opera). Most of DisplayJS' features are customizable when it come to performances, it mean that you can choose how it renders the DOM.</p>
+
+                    </div>
+                  </div>
+                </div>
+
+            </section>
+
+        </section>
+        <section class="download">
+            <a href="https://unpkg.com/DisplayJS"><div class="download-btn">Download</div></a>
+            <a href="https://github.com/arguiot/DisplayJS/stargazers"><div class="star-btn">Star on GitHub</div></a>
+        </section>
+        <section class="examples">
+            <h1>Some examples:</h1>
+            <div class="codepen" id="example1">
+                <h3>Input manipulation demo:</h3>
+				<p data-height="512" data-theme-id="0" data-slug-hash="JyJjOM" data-default-tab="js,result" data-user="arguiot" data-embed-version="2" data-pen-title="Morse code" class="codepen">See the Pen <a href="https://codepen.io/arguiot/pen/JyJjOM/">Morse code</a> by Arthur  Guiot (<a href="https://codepen.io/arguiot">@arguiot</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+				<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+            </div>
+            <div class="codepen" id="example2">
+                <h3>Live rendering demo:</h3>
+				<p data-height="512" data-theme-id="0" data-slug-hash="QMpyBB" data-default-tab="css,result" data-user="arguiot" data-embed-version="2" data-pen-title="DisplayJS Clock" class="codepen">See the Pen <a href="https://codepen.io/arguiot/pen/QMpyBB/">DisplayJS Clock</a> by Arthur  Guiot (<a href="https://codepen.io/arguiot">@arguiot</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+				<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+            </div>
+            <div class="codepen" id="example3">
+                <h3>Math demo:</h3>
+                <p data-height="512" data-theme-id="0" data-slug-hash="yXVxYX" data-default-tab="js,result" data-user="arguiot" data-embed-version="2" data-pen-title="yXVxYX" class="codepen">See the Pen <a href="https://codepen.io/arguiot/pen/yXVxYX/">DisplayJS - Example 3</a> by Arthur  Guiot (<a href="https://codepen.io/arguiot">@arguiot</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+                <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+            </div>
+            <h2>And, DisplayJS is more than that! If you already like this, you can definitly read the <a href="https://github.com/arguiot/DisplayJS/wiki">docs</a>!</h2>
+        </section>
+        <!-- #main -->
+    </div>
+    <!-- #main-container -->
+    <div class="footer-container">
+        <footer class="wrapper">
+            <!-- <h3>Follow us:</h3> -->
+            <ul>
+                <li><a href="https://github.com/arguiot"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                <li><a href="https://twitter.com/arthur_guiot"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="https://codepen.io/arguiot"><i class="fa fa-codepen" aria-hidden="true"></i></a></li>
+            </ul>
+            <h3>Made with ❤️ by <a href="https://github.com/arguiot" class="madeby">@arguiot</a></h3>
+            <p>© Arthur Guiot 2017</p>
+        </footer>
+    </div>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
+    </script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/DisplayJS/1.2.0/display.min.js" integrity="sha256-6NhJzAUc5b5cUqscNWa10R2rptnhqT0HVxz7wDwMNNs=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script src="https://www.w3counter.com/tracker.js?id=110800"></script>
+    <script>
+        (function(b, o, i, l, e, r) {
+            b.GoogleAnalyticsObject = l;
+            b[l] || (b[l] =
+                function() {
+                    (b[l].q = b[l].q || []).push(arguments)
+                });
+            b[l].l = +new Date;
+            e = o.createElement(i);
+            r = o.getElementsByTagName(i)[0];
+            e.src = 'https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e, r)
+        }(window, document, 'script', 'ga'));
+        ga('create', 'UA-XXXXX-X', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <script>
+      var HW_config = {
+        selector: ".title", // CSS selector where to inject the badge
+        account: "xbDkNJ" // your account ID
+      };
+    </script>
+    <script async src="https://cdn.headwayapp.co/widget.js"></script>
+</body>
+
+</html>

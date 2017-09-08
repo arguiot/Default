@@ -1,0 +1,25 @@
+{
+  "name": "Default",
+  "description": "Default project",
+  "main": "dist/default.min.js",
+  "authors": [
+    "Arthur Guiot"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "Display.JS",
+    "display",
+    "DOM",
+    "manipulation",
+    "framework",
+    "javascript"
+  ],
+  "homepage": "https://github.com/arguiot/Default",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
