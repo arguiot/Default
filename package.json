@@ -51,7 +51,7 @@
     "babel-plugin-transform-member-expression-literals": "^6.8.4",
     "babel-plugin-transform-merge-sibling-variables": "^6.8.5",
     "babel-plugin-transform-minify-booleans": "^6.9.4",
-    "babel-plugin-transform-property-literals": "^6.8.4",
+    "babel-plugin-transform-property-literals": "^6.9.4",
     "babel-plugin-transform-remove-console": "^6.8.4",
     "babel-plugin-transform-remove-debugger": "^6.8.4",
     "babel-plugin-transform-remove-undefined": "^0.1.2",
