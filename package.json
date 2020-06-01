@@ -58,7 +58,7 @@
     "babel-plugin-transform-simplify-comparison-operators": "^6.8.4",
     "babel-plugin-transform-undefined-to-void": "^6.8.2",
     "babel-preset-babili": "^0.1.4",
-    "babel-preset-env": "^1.6.0",
+    "babel-preset-env": "^1.7.0",
     "babili": "^0.1.4",
     "buffer-shims": "^1.0.0",
     "eslint": "^4.18.2",
